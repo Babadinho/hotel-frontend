@@ -2,7 +2,7 @@
 
 body {
     // background-image: url('../images/background.jpg');
-    // background-color: #000;
+    background-color: #f7f8fd !important;
     height: 100rem !important;
 }
 
@@ -41,4 +41,20 @@ body {
   
 .button:hover {
     transform: translateY(-.07rem);
+}
+
+.toggleIcon {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.datepicker {
+    width: 100% !important;
+}
+
+.datePicker .Mui-focused fieldset.MuiOutlinedInput-notchedOutline {
+    border-color: #c53030 !important;
+}
+
+.Mui-focused.MuiFormLabel-root {
+    color: #c53030 !important;
 }

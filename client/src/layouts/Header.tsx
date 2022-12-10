@@ -8,6 +8,7 @@ import {
   MdWifi,
 } from 'react-icons/md';
 import { motion } from 'framer-motion';
+import BookReservation from '../components/BookReservation';
 
 const Header = () => {
   const container = {
@@ -68,7 +69,7 @@ const Header = () => {
           left={0}
           right={0}
           textAlign='center'
-          top={170}
+          top={{ base: 150, md: 170 }}
         >
           <Box
             textAlign='center'
@@ -100,7 +101,7 @@ const Header = () => {
             <Box>
               <motion.div variants={item}>
                 <chakra.h1
-                  fontSize={{ base: '5xl', sm: '5xl', md: '6xl' }}
+                  fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }}
                   letterSpacing='tight'
                   lineHeight='short'
                   fontWeight='bold'
@@ -133,7 +134,7 @@ const Header = () => {
               </chakra.h1>
             </motion.div>
             <motion.div variants={item}>
-              <chakra.p
+              <Box
                 mt={{ base: 3, sm: 5, md: 5 }}
                 mx={{ sm: 'auto', lg: 0 }}
                 mb={6}
@@ -155,10 +156,11 @@ const Header = () => {
                   <MdCall />
                   <Text pl='0.2rem'>24/7 Customer Service</Text>
                 </chakra.span>
-              </chakra.p>
+              </Box>
             </motion.div>
             <motion.div variants={item}>
               <Button
+                mt={'1.8rem'}
                 className='button'
                 size={'lg'}
                 rounded={50}
@@ -173,6 +175,7 @@ const Header = () => {
             </motion.div>
           </Box>
         </Box>
+        <BookReservation />
       </Box>
     </motion.div>
   );

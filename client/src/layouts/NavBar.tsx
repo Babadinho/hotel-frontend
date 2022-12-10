@@ -67,7 +67,7 @@ const NavBar = () => {
             textDecoration: 'none',
           }}
         >
-          <Text
+          <Box
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontSize={'2xl'}
             fontWeight={600}
@@ -88,7 +88,7 @@ const NavBar = () => {
               <MdHomeFilled />
             </Text>{' '}
             OTEL
-          </Text>
+          </Box>
         </Link>
         <Flex>
           <Flex display={{ base: 'none', md: 'flex' }}>
@@ -98,15 +98,27 @@ const NavBar = () => {
         <Flex display={{ base: 'flex', md: 'none' }}>
           <IconButton
             onClick={onToggle}
+            className='toggleIcon'
             icon={
               isOpen ? (
-                <CloseIcon w={3} h={3} />
+                <CloseIcon w={4} h={4} color='white' />
               ) : (
                 <HamburgerIcon w={7} h={7} color='white' />
               )
             }
             variant={'ghost'}
+            bg='none'
             aria-label={'Toggle Navigation'}
+            _focus={{
+              bg: 'none',
+              outline: 0,
+              boxShadow: 0,
+            }}
+            _active={{
+              bg: 'none',
+              outline: 0,
+              boxShadow: 0,
+            }}
           />
         </Flex>
       </Flex>
