@@ -54,7 +54,7 @@ const About = () => {
         w='full'
         alignItems='center'
         justifyContent='center'
-        px={{ base: '1rem', md: '5rem', xl: '10rem' }}
+        px={{ base: '0.5rem', md: '5rem', xl: '10rem' }}
       >
         <Box
           bg='white'
@@ -67,6 +67,8 @@ const About = () => {
           <Box w={{ lg: '50%' }}>
             <Box
               h={{ base: 64, lg: 'full' }}
+              roundedLeft={{ base: 'none', lg: 'md' }}
+              roundedTop={{ base: 'md', md: 'none' }}
               bgSize='cover'
               style={{
                 backgroundImage: `url('${Background}')`,

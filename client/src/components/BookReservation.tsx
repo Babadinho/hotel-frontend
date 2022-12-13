@@ -34,7 +34,7 @@ const BookReservation = () => {
 
   return (
     <Box
-      px={{ base: '1rem', md: '5rem', xl: '10rem' }}
+      px={{ base: '0.5rem', md: '5rem', xl: '10rem' }}
       position='absolute'
       bottom={{
         base: '-10.5rem',
