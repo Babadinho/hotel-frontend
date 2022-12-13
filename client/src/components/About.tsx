@@ -56,7 +56,6 @@ const About = () => {
         justifyContent='center'
         px={{ base: '1rem', md: '5rem', xl: '10rem' }}
       >
-        {/* <motion.div variants={inView && item} style={{ width: '100%' }}> */}
         <Box
           bg='white'
           _dark={{ bg: 'gray.800' }}
@@ -108,9 +107,8 @@ const About = () => {
               OTEL
             </chakra.h2>
             <chakra.p
-              textAlign='justify'
               mt={4}
-              fontSize='1.1rem'
+              fontSize={{ base: '1rem', md: '1.1rem' }}
               color='gray.600'
             >
               Hotel is a company that operates a chain of hotels and resorts.
@@ -141,7 +139,6 @@ const About = () => {
             </Box>
           </Box>
         </Box>
-        {/* </motion.div> */}
       </Flex>
     </motion.div>
   );
