@@ -1,5 +1,13 @@
 import React, { useEffect } from 'react';
-import { Box, Flex, Link, chakra, Text, Button } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Link,
+  chakra,
+  Text,
+  Button,
+  Heading,
+} from '@chakra-ui/react';
 import { MdHomeFilled } from 'react-icons/md';
 const Background = require('../public/images/back4.jpg');
 import { motion, useAnimation } from 'framer-motion';
@@ -50,7 +58,7 @@ const About = () => {
       <Flex
         ref={ref}
         mt={{ base: '18rem', md: '15rem', lg: '13rem' }}
-        mb='5rem'
+        mb='7rem'
         w='full'
         alignItems='center'
         justifyContent='center'
@@ -61,7 +69,7 @@ const About = () => {
           _dark={{ bg: 'gray.800' }}
           display={{ lg: 'flex' }}
           w='100%'
-          shadow='lg'
+          shadow='sm'
           rounded='lg'
         >
           <Box w={{ lg: '50%' }}>
@@ -82,15 +90,15 @@ const About = () => {
             maxW={{ base: 'full', lg: '5xl' }}
             w={{ lg: '50%' }}
           >
-            <chakra.h2
+            <Heading
               fontSize={{ base: '2xl', md: '3xl' }}
-              color='gray.800'
+              color={'gray.700'}
               _dark={{ color: 'white' }}
               fontWeight='bold'
               display={'flex'}
               alignItems='center'
             >
-              ABOUT&nbsp;
+              About&nbsp;
               <Box
                 as='span'
                 display={'flex'}
@@ -106,11 +114,11 @@ const About = () => {
               >
                 <MdHomeFilled color='white' />
               </Box>{' '}
-              OTEL
-            </chakra.h2>
+              otel
+            </Heading>
             <chakra.p
               mt={4}
-              fontSize={{ base: '1rem', md: '1.1rem' }}
+              fontSize={{ base: '1rem', md: '1rem' }}
               color='gray.600'
             >
               Hotel is a company that operates a chain of hotels and resorts.
