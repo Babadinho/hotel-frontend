@@ -29,7 +29,7 @@ const newArr = [1, 2, 3, 4];
 
 const RoomCards = () => {
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold: 0.1,
   });
   const animation = useAnimation();
 
@@ -71,7 +71,7 @@ const RoomCards = () => {
   }, [animation, inView]);
 
   return (
-    <Box ref={ref} px={{ base: '0.5rem', md: '5rem', xl: '10rem' }}>
+    <Box px={{ base: '0.5rem', md: '5rem', xl: '10rem' }}>
       <motion.div
         variants={container}
         animate={animation}
@@ -100,7 +100,7 @@ const RoomCards = () => {
           </Text>
         </Stack>
 
-        <SimpleGrid minChildWidth='300px' spacing='25px'>
+        <SimpleGrid minChildWidth='300px' spacing='25px' ref={ref}>
           {newArr &&
             newArr.length > 0 &&
             newArr.map((room: any, i: any) => {
