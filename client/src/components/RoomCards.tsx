@@ -10,6 +10,7 @@ import {
   Heading,
   Button,
   SimpleGrid,
+  chakra,
 } from '@chakra-ui/react';
 const Room = require('../public/images/room.jpg');
 import { MdArrowForward } from 'react-icons/md';
@@ -25,7 +26,7 @@ const data = {
   numReviews: 34,
 };
 
-const newArr = [1, 2, 3, 4];
+const newArr = [1, 2, 3];
 
 const RoomCards = () => {
   const { ref, inView } = useInView({
@@ -85,9 +86,13 @@ const RoomCards = () => {
           w={{ base: 'full', md: '50vw' }}
           mb='3rem'
         >
-          <Heading fontSize={{ base: '2xl', md: '3xl' }} color={'gray.700'}>
+          <chakra.h2
+            fontSize={{ base: '2xl', md: '3xl' }}
+            color={'gray.700'}
+            fontWeight='bold'
+          >
             Our Rooms & Suites
-          </Heading>
+          </chakra.h2>
           <Text
             fontSize={{ base: '1rem', md: '1rem' }}
             color={'gray.600'}

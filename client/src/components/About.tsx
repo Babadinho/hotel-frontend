@@ -90,7 +90,7 @@ const About = () => {
             maxW={{ base: 'full', lg: '5xl' }}
             w={{ lg: '50%' }}
           >
-            <Heading
+            <chakra.h2
               fontSize={{ base: '2xl', md: '3xl' }}
               color={'gray.700'}
               _dark={{ color: 'white' }}
@@ -114,8 +114,8 @@ const About = () => {
               >
                 <MdHomeFilled color='white' />
               </Box>{' '}
-              otel
-            </Heading>
+              OTEL
+            </chakra.h2>
             <chakra.p
               mt={4}
               fontSize={{ base: '1rem', md: '1rem' }}
