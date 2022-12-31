@@ -120,6 +120,7 @@ const About = () => {
               mt={4}
               fontSize={{ base: '1rem', md: '1rem' }}
               color='gray.600'
+              textAlign='justify'
             >
               Hotel is a company that operates a chain of hotels and resorts.
               Our properties are located in popular tourist destinations around

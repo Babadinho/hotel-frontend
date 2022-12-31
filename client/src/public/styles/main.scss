@@ -59,3 +59,44 @@ body {
 .Mui-focused.MuiFormLabel-root {
     color: #c53030 !important;
 }
+
+.room_card {
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+
+    &:active {
+        transform: translateY(-.1rem);
+    }
+}
+  
+.room_card:hover {
+    transform: translateY(-.3rem);
+}
+
+.room_card:hover img{
+    transform: scale(1.1);
+}
+
+.room_card img {
+    transition: transform 0.5s;
+}
+
+.gallery_button {
+    position: relative;
+  }
+
+.gallery_button::after {
+    content: '';
+    width: 0;
+    height: 0.12rem;
+    background: #c53030;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+  }
+  
+  .gallery_button:hover::after {
+    width: 100%;
+  }

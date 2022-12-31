@@ -72,7 +72,7 @@ const RoomCards = () => {
   }, [animation, inView]);
 
   return (
-    <Box px={{ base: '0.5rem', md: '5rem', xl: '10rem' }}>
+    <Box px={{ base: '0.5rem', md: '5rem', xl: '10rem' }} mb='7rem'>
       <motion.div
         variants={container}
         animate={animation}
@@ -118,6 +118,7 @@ const RoomCards = () => {
                       rounded='md'
                       shadow='sm'
                       position='relative'
+                      className='room_card'
                     >
                       {data.isNew && (
                         <Circle
