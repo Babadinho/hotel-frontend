@@ -7,7 +7,6 @@ import {
   useColorModeValue,
   Stack,
   Text,
-  Heading,
   Button,
   SimpleGrid,
   chakra,
