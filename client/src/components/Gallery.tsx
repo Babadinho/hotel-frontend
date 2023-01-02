@@ -19,7 +19,7 @@ const Gallery = () => {
   const [active, setActive] = useState<string>('all');
 
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
   });
   const animation = useAnimation();
 
@@ -114,13 +114,14 @@ const Gallery = () => {
                   color: 'red.600',
                 }}
                 className='gallery_button'
+                ref={ref}
               >
                 {button}
               </Link>
             );
           })}
         </Box>
-        <Box ref={ref}>
+        <Box>
           <Grid
             templateColumns={{
               sm: 'repeat(autofill, 1fr)',
