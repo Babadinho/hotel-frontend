@@ -7,7 +7,7 @@ import { Box } from '@chakra-ui/react';
 
 const Home = () => {
   return (
-    <Box pb='3rem'>
+    <Box pb='10rem'>
       <Header />
       <About />
       <RoomCards />

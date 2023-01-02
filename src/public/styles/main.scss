@@ -1,19 +1,24 @@
 @import "./animations.scss";
 
+#app {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+html {
+height: 100%;
+}
+
+.footer {
+margin-top: auto !important;
+}
+
 body {
-    // background-image: url('../images/background.jpg');
+    margin: 0;
     background-color: #fcfcfd !important;
     height: 100rem !important;
     font-family: 'Poppins', sans-serif !important;
-}
-
-.logo {
-    // font-family: 'Merienda One', cursive !important;
-}
-
-#app {
-    // background-image: url('../images/background.jpg') !important;
-    height: 100vh !important;
 }
 
 .overlay {
