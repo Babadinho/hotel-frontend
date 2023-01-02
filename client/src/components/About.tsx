@@ -9,7 +9,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import { MdHomeFilled } from 'react-icons/md';
-const Background = require('../public/images/back4.jpg');
+const Background = require('../public/images/background.jpg');
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

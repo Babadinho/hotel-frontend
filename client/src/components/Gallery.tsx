@@ -98,7 +98,7 @@ const Gallery = () => {
           display='flex'
           justifyContent='center'
           flexWrap={'wrap'}
-          gap={{ base: '1.8rem', md: '3rem' }}
+          gap={{ base: '1.5rem', md: '3rem' }}
         >
           {buttons.map((button, i) => {
             return (

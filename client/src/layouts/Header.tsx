@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, chakra, Image, Text } from '@chakra-ui/react';
-const HeaderBackground = require('../public/images/back4.jpg');
+const HeaderBackground = require('../public/images/background.jpg');
 import {
   MdCall,
   MdDirectionsCarFilled,
