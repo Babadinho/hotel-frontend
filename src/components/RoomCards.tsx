@@ -33,6 +33,10 @@ const RoomCards = () => {
   });
   const animation = useAnimation();
 
+  if (inView) {
+    console.log(inView);
+  }
+
   const container = {
     show: {
       transition: {
@@ -194,6 +198,22 @@ const RoomCards = () => {
               );
             })}
         </SimpleGrid>
+        <Box display='flex' justifyContent='center' mt='3.5rem'>
+          <motion.div variants={item}>
+            <Button
+              className='button'
+              size={'lg'}
+              rounded={50}
+              bg='red.600'
+              _hover={{ bg: 'red.600' }}
+              color='white'
+              fontSize='md'
+              fontWeight={400}
+            >
+              View all Available Rooms
+            </Button>
+          </motion.div>
+        </Box>
       </motion.div>
     </Box>
   );

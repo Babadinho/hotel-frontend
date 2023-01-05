@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Box,
   Stack,
@@ -15,7 +15,7 @@ import { useInView } from 'react-intersection-observer';
 import { MdCollections } from 'react-icons/md';
 
 const Gallery = () => {
-  const buttons = ['all', 'rooms', 'hotel', 'yoga', 'party'];
+  const buttons = ['all', 'rooms', 'hotel', 'restaurant', 'gym'];
   const [active, setActive] = useState<string>('all');
 
   const { ref, inView } = useInView({
@@ -61,7 +61,7 @@ const Gallery = () => {
   }, [animation, inView, active]);
 
   return (
-    <Box px={{ base: '0.5rem', md: '5rem', xl: '10rem' }}>
+    <Box px={{ base: '0.5rem', md: '5rem', xl: '10rem' }} mb='9rem'>
       <motion.div
         variants={container}
         animate={animation}
@@ -133,13 +133,8 @@ const Gallery = () => {
             {gallery.map((g, i) => {
               if (g.category === active || active === 'all') {
                 return (
-                  <GridItem w='100%' colSpan={1}>
-                    <motion.div
-                      variants={item}
-                      key={i}
-                      layout
-                      className='image'
-                    >
+                  <GridItem w='100%' colSpan={1} key={i}>
+                    <motion.div variants={item} layout className='image'>
                       <Image
                         h='300px'
                         w='100%'

@@ -105,7 +105,7 @@ const Header = () => {
                   letterSpacing='tight'
                   lineHeight='short'
                   fontWeight='bold'
-                  color='white'
+                  color='gray.50'
                   _dark={{ color: 'white' }}
                 >
                   Welcome to Hotel
@@ -118,7 +118,7 @@ const Header = () => {
                 letterSpacing='tight'
                 lineHeight='short'
                 fontWeight='400'
-                color='white'
+                color='gray.200'
                 _dark={{ color: 'white' }}
               >
                 <chakra.span display={{ base: 'block', xl: 'inline' }}>
@@ -139,7 +139,7 @@ const Header = () => {
                 mx={{ sm: 'auto', lg: 0 }}
                 mb={6}
                 fontSize={{ base: 'xs', md: 'md' }}
-                color='white'
+                color='gray.50'
                 lineHeight='base'
                 display={'flex'}
                 justifyContent='center'

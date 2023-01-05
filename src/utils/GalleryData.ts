@@ -1,12 +1,12 @@
 const Room1 = require('../public/images/gallery/room1.jpg');
 const Room5 = require('../public/images/gallery/room5.jpg');
 const Room6 = require('../public/images/gallery/room6.jpg');
-const Party1 = require('../public/images/gallery/party1.jpg');
-const Party2 = require('../public/images/gallery/party2.jpg');
-const Party3 = require('../public/images/gallery/party3.jpg');
-const Yoga1 = require('../public/images/gallery/yoga1.jpg');
-const Yoga2 = require('../public/images/gallery/yoga2.jpg');
-const Yoga3 = require('../public/images/gallery/yoga3.jpg');
+const Restaurant1 = require('../public/images/gallery/restaurant1.jpg');
+const Restaurant2 = require('../public/images/gallery/restaurant2.jpg');
+const Restaurant3 = require('../public/images/gallery/restaurant3.jpg');
+const Gym1 = require('../public/images/gallery/gym1.jpg');
+const Gym2 = require('../public/images/gallery/gym2.jpg');
+const Gym3 = require('../public/images/gallery/gym3.jpg');
 const Hotel1 = require('../public/images/gallery/hotel1.jpeg');
 const Hotel3 = require('../public/images/gallery/hotel3.jpg');
 const Hotel4 = require('../public/images/gallery/hotel4.jpg');
@@ -23,16 +23,16 @@ export const gallery: Gallery[] = [
   },
 
   {
-    photo: Party1,
-    category: 'party',
+    photo: Restaurant1,
+    category: 'restaurant',
   },
   {
     photo: Hotel1,
     category: 'hotel',
   },
   {
-    photo: Yoga1,
-    category: 'yoga',
+    photo: Gym1,
+    category: 'gym',
   },
   {
     photo: Hotel3,
@@ -43,27 +43,27 @@ export const gallery: Gallery[] = [
     category: 'rooms',
   },
   {
-    photo: Party2,
-    category: 'party',
+    photo: Restaurant2,
+    category: 'restaurant',
   },
   {
     photo: Room6,
     category: 'rooms',
   },
   {
-    photo: Yoga2,
-    category: 'yoga',
+    photo: Gym2,
+    category: 'gym',
   },
   {
-    photo: Party3,
-    category: 'party',
+    photo: Restaurant3,
+    category: 'restaurant',
   },
   {
     photo: Hotel4,
     category: 'hotel',
   },
   {
-    photo: Yoga3,
-    category: 'yoga',
+    photo: Gym3,
+    category: 'gym',
   },
 ];

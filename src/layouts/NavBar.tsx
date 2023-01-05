@@ -25,7 +25,6 @@ const NavBar = () => {
 
   // navbar scroll changeBackground function
   const changeBackground = () => {
-    // console.log(window.scrollY);
     if (window.scrollY >= 66) {
       setNavScroll(true);
     } else {
@@ -305,22 +304,15 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '#',
   },
   {
-    label: 'Explore',
-    children: [
-      {
-        label: 'Latest News',
-        subLabel: 'Explore latest news',
-        href: '#',
-      },
-      {
-        label: 'Upcoming Events',
-        subLabel: 'Find upcoming events',
-        href: '#',
-      },
-    ],
+    label: 'Contact',
+    href: '#',
   },
   {
-    label: 'Contact',
+    label: 'Login',
+    href: '#',
+  },
+  {
+    label: 'Register',
     href: '#',
   },
 ];
