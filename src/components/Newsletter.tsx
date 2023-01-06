@@ -136,7 +136,7 @@ const Newsletter = () => {
                 fontWeight={400}
                 className='button'
               >
-                Get Started
+                Subscribe
               </Button>
             </SimpleGrid>
           </motion.div>
