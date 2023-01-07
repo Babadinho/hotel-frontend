@@ -84,7 +84,7 @@ const CarouselGallery = ({
                     src={gallery.photo}
                     alt='carousel image'
                     boxSize='full'
-                    backgroundSize='cover'
+                    backgroundSize={'cover'}
                   />
                 </Box>
               ))}

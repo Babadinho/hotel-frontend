@@ -114,7 +114,7 @@ const About = () => {
               >
                 <MdHomeFilled color='white' />
               </Box>{' '}
-              OTEL
+              HOTEL
             </chakra.h2>
             <chakra.p
               mt={4}

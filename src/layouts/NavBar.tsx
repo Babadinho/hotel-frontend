@@ -86,7 +86,7 @@ const NavBar = () => {
             >
               <MdHomeFilled />
             </Text>{' '}
-            OTEL
+            HOTEL
           </Box>
         </Link>
         <Flex>
